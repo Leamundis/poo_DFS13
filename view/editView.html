@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit</title>
+</head>
+    <body>
+        <form action="/save" method="POST">
+            <input type="hidden" name="id" value='{{ID}}'>
+
+            <label for="title">Nom de la page</label>
+            <textarea name="title" id="" cols="30" rows="10">{{TITLE}}</textarea>
+
+            <label for="content">Contenu de la page</label>
+            <textarea name="content" id="" cols="30" rows="10">{{CONTENT}}</textarea>
+            <button type="submit">Ok!</button>
+        </form>
+    </body>
+</html>
